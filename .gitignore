@@ -1,0 +1,7 @@
+*.swp
+*.spec
+build/
+dist/
+*/.DS_Store
+.DS_Store
+__pycache__/

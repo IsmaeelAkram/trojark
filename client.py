@@ -1,7 +1,7 @@
 import socket
 import subprocess
 
-ip = socket.gethostname()
+ip = "67.85.111.80"
 port = 9258
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

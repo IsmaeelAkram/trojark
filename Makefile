@@ -1,7 +1,7 @@
 all: client
 
 client:
-	pyinstaller client.py --onefile --noconsole --name "Trojark Client" --icon icon.ico
+	pyinstaller client.py --onefile --noconsole --name "Trojark Client"
 
 # server:
 # 	pyinstaller -F server.py

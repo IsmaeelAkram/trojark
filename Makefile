@@ -1,7 +1,10 @@
 all: client server
 
 client:
-	pyinstaller client.py
+	pyinstaller -F -w client.py
 
 server:
-	pyinstaller server.py
+	pyinstaller -F server.py
+
+clean:
+	rm -rf *.spec build dist

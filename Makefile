@@ -1,10 +1,10 @@
-all: client server
+all: client
 
 client:
-	pyinstaller -F -w client.py
+	pyinstaller client.py --onefile --noconsole --name "Trojark Client" --icon icon.ico
 
-server:
-	pyinstaller -F server.py
+# server:
+# 	pyinstaller -F server.py
 
 clean:
 	rm -rf *.spec build dist

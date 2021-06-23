@@ -21,7 +21,7 @@ s.bind(("0.0.0.0", 9258))
 s.listen(5)
 print(chalk.cyan("Awaiting connections"))
 
-command_overrides = {"ip": overrides.ip}
+command_overrides = {"ip": overrides.ip, "scare": overrides.scare}
 
 while True:
     clientsocket, address = s.accept()

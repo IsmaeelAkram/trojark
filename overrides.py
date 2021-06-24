@@ -1,5 +1,4 @@
 import socket
-import chalk
 
 
 def send_command(clientsocket: socket.socket, cmd: str):

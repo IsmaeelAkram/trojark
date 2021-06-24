@@ -5,6 +5,7 @@ dist/
 */.DS_Store
 .DS_Store
 __pycache__/
+server_ip.txt
 
 ### Python template
 # Byte-compiled / optimized / DLL files
@@ -290,5 +291,4 @@ fabric.properties
 .idea/httpRequests
 
 # Android studio 3.1+ serialized cache file
-.idea/caches/build_file_checksums.ser
-
+.idea/caches/build_file_checksums.se

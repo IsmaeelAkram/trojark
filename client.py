@@ -6,9 +6,10 @@ import subprocess
 import sys
 from server_ip import server_ip
 
-ip = server_ip.server_ip if len(sys.argv) > 1 else socket.gethostname()
+verbose = True if len(sys.argv) > 1 else False
+ip = server_ip if len(sys.argv) > 1 else server_ip
+if verbose: print(ip)
 port = 9258
-verbose = False if len(sys.argv) > 1 else True
 
 print("Client has started, connecting to server")
 

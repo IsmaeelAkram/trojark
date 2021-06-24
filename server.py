@@ -17,6 +17,7 @@ print("----------------------------")
 print("Current platform: " + os.name)
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
 s.bind(("0.0.0.0", 9258))
 s.listen(5)
 print(chalk.cyan("Awaiting connections"))

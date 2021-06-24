@@ -1,0 +1,3 @@
+([('Trojark Client',
+   '/Users/ismaeel/Code/trojark/dist/Trojark Client',
+   'EXECUTABLE')],)

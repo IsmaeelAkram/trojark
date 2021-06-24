@@ -1,10 +1,13 @@
+# python client.py (dev)
+
 import socket
 import os
 import subprocess
+import sys
 
-ip = "67.85.111.80"
+ip = "67.85.105.1" if len(sys.argv) > 1 else socket.gethostname()
 port = 9258
-verbose = False
+verbose = False if len(sys.argv) > 1 else True
 
 print("Client has started, connecting to server")
 

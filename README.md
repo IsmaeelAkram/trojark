@@ -1,1 +1,1 @@
-# Trojark
+Please refer to the [user guide](/blob/master/User Guide.pdf) for more details.

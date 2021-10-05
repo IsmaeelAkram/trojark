@@ -4,10 +4,13 @@ from pyfiglet import Figlet
 import os
 import overrides
 
-if os.name == "nt":
-    os.system("cls")
-else:
-    os.system("clear")
+def clear():
+  if os.name == "nt":
+      os.system("cls")
+  else:
+      os.system("clear")
+
+clear()
 
 # Banner
 banner = Figlet(font="alligator2")

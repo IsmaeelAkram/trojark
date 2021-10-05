@@ -7,7 +7,7 @@ import sys
 from server_ip import server_ip
 
 verbose = True if len(sys.argv) > 1 else False
-ip = server_ip if len(sys.argv) > 1 else server_ip
+ip = socket.gethostname() if len(sys.argv) > 1 else server_ip
 if verbose:
     print(ip)
 port = 9258
